@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Heat Map</title>
+</head>
+<body>
+    <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+    <h4 id='description'>Temperature from 1753 to 2015. Average is 8.66c</h4>
+    <div id="tooltip"></div>
+    <svg id="canvas">
+
+
+    </svg>
+    <svg id="legend">
+        <rect x='10' y='0' width='30' height="30" fill='SteelBlue'>
+            <text>Variance of &lt= -1</text>
+        </rect>/>
+        <rect x='10' y='30' width='30' height="30"  fill='LightSteelBlue'>
+            <text>On or below average</text>
+        </rect>/>
+        <rect x='10' y='60' width='30' height="30"  fill='Orange'>
+            <text>Above average</text>
+        </rect>/>
+        <rect x='10' y='90' width='30' height="30"  fill='Crimson'>
+            <text>Variance of &gt= +1</text>
+        </rect>/>
+    </svg>
+</body>
+<script defer src="./script.js"></script>
+<script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
